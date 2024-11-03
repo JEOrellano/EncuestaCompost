@@ -1,0 +1,126 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a47109064d598992e36669f1dcfdb23b",
+    "entities": [
+      {
+        "tableName": "Encuestador",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`cue` TEXT NOT NULL, `password` TEXT NOT NULL, PRIMARY KEY(`cue`))",
+        "fields": [
+          {
+            "fieldPath": "cue",
+            "columnName": "cue",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "password",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "cue"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Encuesta",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id_sexo` TEXT NOT NULL, `id_estudio` TEXT NOT NULL, `id_edad` TEXT NOT NULL, `id_trabajo` TEXT NOT NULL, `id_relacion_contractual` TEXT NOT NULL, `id_rubro` TEXT NOT NULL, `id_hora_semanal` TEXT NOT NULL, `id_antiguedad` TEXT NOT NULL, `id_salario` TEXT NOT NULL, `id_conforme` TEXT NOT NULL, `id_encuestador` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_sexo",
+            "columnName": "id_sexo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_estudio",
+            "columnName": "id_estudio",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_edad",
+            "columnName": "id_edad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_trabajo",
+            "columnName": "id_trabajo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_relacion_contractual",
+            "columnName": "id_relacion_contractual",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_rubro",
+            "columnName": "id_rubro",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_hora_semanal",
+            "columnName": "id_hora_semanal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_antiguedad",
+            "columnName": "id_antiguedad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_salario",
+            "columnName": "id_salario",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_conforme",
+            "columnName": "id_conforme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_encuestador",
+            "columnName": "id_encuestador",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a47109064d598992e36669f1dcfdb23b')"
+    ]
+  }
+}

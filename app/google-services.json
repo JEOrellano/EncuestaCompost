@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "782001904216",
+    "project_id": "encuesta-firebase-baf8a",
+    "storage_bucket": "encuesta-firebase-baf8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782001904216:android:a728314fad0b01d27b882d",
+        "android_client_info": {
+          "package_name": "com.example.encuestacompost"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1B8ah7QGXqtF0YrTzT3k_DgcFlj1qehk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EncuestaCompost</string>
+    <!-- SHARED PREFERENCES FILE KEY -->
+    <string name="com.example.encuestacompost.PREFERENCE_FILE_KEY">spLoginData</string>
+    <string name="com_example_encuestacompost_USERNAME_KEY">username</string>
+    <!-- BD SQLITE BD NAME -->
+    <string name="BD_ENCUESTA_ROOM">BD_ENCUESTA_ROOM</string>
+</resources>
